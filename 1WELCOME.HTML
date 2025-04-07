@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="badge.jpeg"rel="icon">
+    <link href="badge.jpeg"rel="icon">
+    <style>
+       * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;  /* Avoid scroll issues */
+            background-color: #f0f4f8;
+            background-image: url('book6.jpg'); /* Adjust path if needed */
+            background-size: cover; 
+            background-position: center;  /* Center the image */
+            background-attachment: fixed; /* Make it fixed on scroll for better effect */
+        }
+
+        .welcome-container {
+            text-align: center;
+            background-color: rgba(94, 121, 129, 0.9);  /* Slight transparency */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 800px;
+            max-height: 600px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h1 img {
+            width: 70px;
+            height: 70px;
+        }
+
+        a.button-link {
+            text-decoration: none;
+        }
+        
+
+        button {
+            padding: 10px 20px;
+            background-color: #09f109;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 70px;
+        }
+
+        button:hover {
+            background-color: #0b780b; /* Subtle green shade */
+        }
+
+        p {
+            color: #34495e;
+            font-size: 18px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>
+            <img src="badge.jpeg" alt="Library Badge">
+            Welcome to Our Library!
+            <img src="badge.jpeg" alt="Library Badge">
+        </h1>
+        <p>We're glad to have you here.</p>
+        <!-- Button redirects to the "Create ID Card" page -->
+        <a href="3A'LEVEL AND O'LEVEL.HTML" class="button-link">
+            <button>Open LIB</button>
+        </a>
+        <P></P>
+        <p><a href="" class="link">Create ID</a></P>
+        <p id="message"></p>
+    </div>
+
+    <footer class="footer">
+        &copy;2025 Designed by Johnson and Evalyn
+    </footer>
+
+    <script>
+        // You can remove this JavaScript if redirection is handled by the link.
+        function changeMessage() {
+            window.location.href = "idcard.html";  // JavaScript-based redirection (optional)
+        }
+    </script>
+</body>
+</html>
